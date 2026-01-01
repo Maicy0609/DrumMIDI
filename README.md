@@ -1,5 +1,6 @@
 # DrumMIDI （this shit readme made by ai)
 A Python tool to turn MIDI into hit sounds. Inspired by MIDI transcription in ADOFAI（yes im a adofai player)
+
 有没有大手子把它弄成.adofai谱面qwq
 ## English
 
