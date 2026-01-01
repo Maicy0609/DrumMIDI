@@ -16,7 +16,7 @@ def scan_files(extension: str, script_dir: str):
         return []
 
 def select_file(files: list, file_type: str) -> str:
-    """显示文件列表并让用户选择"""
+    """显示文件列表"""
     if not files:
         return None
     
@@ -34,7 +34,7 @@ def select_file(files: list, file_type: str) -> str:
 
 def main():
     print("=" * 50)
-    print("MIDI转脉冲音频工具")
+    print("MIDI转HitSound")
     print("=" * 50)
     
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -66,7 +66,7 @@ def main():
         sys.exit(1)
     
     # 步骤2: TXT转音频
-    print("\n--- 步骤2: TXT转脉冲音频 ---")
+    print("\n--- 步骤2: TXT转脉冲HitSound ---")
     
     # 自动检测hit.wav
     default_hit = os.path.join(script_dir, 'hit.wav')
