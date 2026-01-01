@@ -1,5 +1,6 @@
 # DrumMIDI （this shit readme made by ai)
 A Python tool to turn MIDI into hit sounds. Inspired by MIDI transcription in ADOFAI（yes im a adofai player)
+有没有大手子把它弄成.adofai谱面qwq
 ## English
 
 DrumMIDI is a simple tool that converts MIDI files to pulse audio using custom hit samples. It helps you turn MIDI music into rhythmic pulse patterns with your own sounds.
