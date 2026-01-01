@@ -217,7 +217,7 @@ def generate_pulse_wave(hit_audio: np.ndarray, frequency: float,
     return pulse_wave.astype(np.float32)
 
 def txt_to_pulse_synthesizer(txt_path: str, hit_wav_path: str, output_path: str):
-    """TXT转脉冲音频（多阶段归一化，带hit时间日志）"""
+    """TXT转HitSound"""
     sample_rate, hit_audio = load_hit_sample(hit_wav_path)
     
     notes, total_duration_us = parse_txt_notes(txt_path)
@@ -249,8 +249,7 @@ def txt_to_pulse_synthesizer(txt_path: str, hit_wav_path: str, output_path: str)
     with open(log_path, 'w') as f:
         for time_ns in hit_times:
             f.write(f"{time_ns}\n")
-    
-    # 音频处理（保持原有逻辑）
+   
     final_max = np.max(np.abs(output_audio))
     
     if final_max > 2.0:
